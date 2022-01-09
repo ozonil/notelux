@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(255, 255, 255);
+            border: solid rgb(129, 128, 128) 2px;
+            color:rgb(0, 0, 0);
+
+            width: 50vw;
+            margin: 0 auto;
+        }
+        textarea {
+            resize: none;
+            width: 50vw;
+        }
+        p {
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>Notelux <a href="/index">home</a> <a href="/record">record</a> <a href="/show">show</a></p>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

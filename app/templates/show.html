@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+    <h3>Previous posts</h3>
+    {% for message in info %}
+    <div><p>{{ message.title }}:<br>{{ message.content }}</p></div>
+    {% endfor %}
+{% endblock %}
